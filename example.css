@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+
+font-family: 'JetBrains Mono', monospace;
+}
+body{
+    /* background-color: #000000; */
+    width: 1179px;
+    max-width: 100%;
+  margin: 0 auto;
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+ /* background: url("images.png")  no-repeat; */
+ /* backgroun; */
+ 
+}
+.title img{
+    border-radius: 50%;
+    height: 150px;
+}
+.img{
+  /* align-content: center; */
+}
+.rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.container{
+   /* background-color: #fff4ff; */
+    padding: 0 10px;
+  /* max-width: 100%; */
+  /* width: 1179px; */
+  /* margin: 0 auto; */
+}
+.item{
+    padding: 30px 10px;
+    /* margin: 10px 0; */
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(160, 206, 203);
+    transition: all .3s ease-in-out;
+}
+h1{
+    font-family: 'DM Sans', sans-serif;
+    color: darkgoldenrod;
+    margin-bottom: 5px;
+}
+.title{
+    margin: 20px;
+}
+.item h1::after{
+    content: " ✅";
+    display: inline;
+    /* content: " kk"; */
+}
+
+.item p::after {
+    content: " - Remember this";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+  }
+  .item:hover{
+      /* background-color: #fff4ff; */
+      border: 1px solid rgb(112, 102, 102);
+  }
+  .title h1{
+    color: #00d084;
+  }
+  .title h1::after{
+      color: #fcb900;
+      content: " ✔";
+
+  }
+  .row{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+     
+  }
+  .row-item{
+      /* border: 1px solid white; */
+  }
+  .additional{
+      /* padding: 30px 0; */
+      
+     
+      color: black;
+      
+  }
+  .additional h1{
+    text-align: center;
+      color: #f78da7;
+  }
+  .additional p{
+      margin-top: 15px;
+      margin-left: 20px;
+      font-size: 20px;
+  }
+  input{
+    margin-left: 20px;
+      padding-left: 0px;
+      margin-top: 1rem;
+      padding: 10px 30px;
+  }
+  #feedback{
+      font-size: 2rem;
+      color: royalblue;
+  }
+  
+  #feedback:after{
+      color: #00d084;
+      content: " ▶";
+  }
+  .row-item-1{
+      flex: 1.5;
+  }
+  .row-item-2{
+    flex: 1.5;
+}
+
+@media (max-width:668px) {
+    .row{
+        flex-direction: column;
+    }
+    .title{
+      justify-content:center ;
+    }
+    .text{
+      text-align: center;
+    }
+    .row .buttons{
+      flex-direction: row;
+    }
+}
+.tagname{
+  border-bottom: 2px solid rgb(174, 199, 35);
+  /* background-color: rgb(241 241 241); */
+  /* background: url(—Pngtree—flat\ travel\ poster\ banner_1025273.jpg); */
+  margin-top: 0px;
+  padding: 10px 0;
+}
+.text{
+  font-size: 2rem;
+ 
+}
+.text h1{
+  color: #f78da7;
+}
+.text h1::before{
+  content: "🔰";
+}
+.text h1::after{
+  content: "🔰";
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.form{
+ align-content: flex-end;
+  flex: 2;
+}
+.form{
+  margin-top: 0px;
+}
+.form-img{
+  border-radius: 50%;
+}
+.form h1::before{
+  content: "📌";
+
+}
+.line{
+  /* border-top: 1px solid black; */
+}
+.form h1{
+  text-align: end;
+  font-size: 2rem;
+}
+  .buttons{
+    margin-left: 20px;
+    padding-left: 0px;
+    margin-top: 1rem;
+    
+    /* padding: 20px 10px; */
+  }
+  button{
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    transition: all .3s ease-in-out;
+  }
+  button:hover{
+    background-color: black;
+    color: aliceblue;
+  }
